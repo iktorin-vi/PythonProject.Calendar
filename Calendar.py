@@ -1,11 +1,7 @@
-import calendar
+from tkinter import *
 
-year = 2025
-month = 4
-day = 7
-print(calendar.month(year, month))
+root = Tk()
 
-if month<10 and day<10:
-    print("0"+f"{day}."+"0" + f"{month}.{year}")
-else:
-    print(f"{day}.{month}.{year}")
+root.title("CALENDAR")
+root.maxsize(1920,1080)
+root.mainloop()
