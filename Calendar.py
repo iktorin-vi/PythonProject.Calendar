@@ -6,8 +6,8 @@ def get_calendar():
     now = datetime.now()
     year, month, day = now.year, now.month, now.day
     cal_text = calendar.month(year, month)
-    today_data = f"Today: {day:02}.{month:02}.{year}"
-    return cal_text, today_data
+    date = f"Today: {day:02}.{month:02}.{year}"
+    return cal_text, date
 
 root = Tk()
 root.title("CALENDAR")
